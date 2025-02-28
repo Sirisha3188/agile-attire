@@ -1,0 +1,228 @@
+
+
+
+.image-container {
+    display: flex;
+    justify-content: center; 
+    gap:20px;
+    margin:20px 50px;
+    overflow-x: auto;
+    white-space:nowrap;
+    padding-bottom: 10px;
+   
+    
+   
+}
+.details{
+    display:none;
+}
+.details.show{
+    max-height: 500px;
+    opacity:1;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px;
+}
+.submenu-image{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+
+}
+
+
+
+.image-wrapper{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+   
+    
+}
+ 
+
+#lehenga-details{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+#saree-details{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+
+}
+
+
+.lehenga,
+.saree1,
+.co-ord,.haldi,.bachelorette,.sangeet{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    transition:width 0.7s, height 0.7s
+   
+   
+   
+}
+.lehenga:hover,
+.saree1:hover,
+.co-ord:hover,.haldi:hover,.bachelorette:hover,.sangeet:hover{
+    height: 600px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px; 
+    transition: 0.7s;
+    cursor: pointer;
+   
+}
+
+button {
+   
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+}
+
+.lehengabutton,.sangeetbutton{
+    background-color: brown;
+    color: rgb(225, 188, 25);
+}
+
+.saree1button,
+.co-ordbutton {
+    background-color: rgb(165, 43, 43);
+    color: rgb(231, 168, 21);
+}
+.haldibutton,
+.bachelorettebutton{
+    background-color: rgb(165, 43, 43);
+    color: rgb(231, 168, 21);
+
+}
+
+p {
+    text-align: center;
+}
+.saree1button:hover{
+        color:rgb(231, 168, 21);
+        background-color:rgba(198, 27, 27, 0.782);
+        opacity:0.7;
+        transition: 0.5s;
+        box-shadow: 10px;
+        height: 40px;
+        width:100px;
+        
+        
+
+    }
+    .lehengabutton:hover{
+        color:brown;
+        background-color:rgb(225, 188, 25);
+        opacity:0.7;
+        transition: 0.5s;
+        box-shadow: 10px;
+        
+        
+
+    }
+    .co-ordbutton:hover{
+        color:brown;
+        background-color:rgb(225, 188, 25);
+        opacity:0.7;
+        transition: 0.5s;
+
+    }
+    .haldibutton:hover{
+        color:brown;
+        background-color:rgb(225, 188, 25);
+        opacity:0.7;
+        transition: 0.5s;
+        box-shadow: 10px;
+        
+        
+
+    }
+    .bachelorettebutton:hover{
+        color:brown;
+        background-color:rgb(225, 188, 25);
+        opacity:0.7;
+        transition: 0.5s;
+
+    }
+    .sangeetbutton:hover{
+        color:brown;
+        background-color:rgb(225, 188, 25);
+        opacity:0.7;
+        transition: 0.5s;
+        box-shadow: 10px;
+        
+    }
+
+
+
+  .body{
+    background-image:url(bgimage.jpeg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+    
+
+ }
+ 
+ .navbar {
+    margin-right:10px;
+    text-align: right; 
+    justify-content:flex-end;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    
+    display: inline-block; /* Make ul inline to enable text-align:center on navbar */
+    margin-top:10px;
+    font-size: 24px;
+    
+}
+
+.navbar ul li a{
+    text-transform: capitalize;
+    color:brown;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black; }
+
+    .navbar a:hover{
+        color:brown
+    }
+    li a:hover{
+        border: brown;
+        background-color: pink;
+        transition:0.5s;
+    }
+
+.scrollable-container{
+    overflow:auto;
+    width:100vw;
+}
+.scrollable-navbar{
+    overflow-x: auto; white-space: nowrap; width: 100vw; 
+}
