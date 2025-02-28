@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Help</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url(bgimage.jpeg);
+        }
+
+        .help-container {
+            position: relative; /* Needed for absolute positioning of dropdown */
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            background-color: wheat;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(245, 213, 9, 0.1);
+            text-align: center;
+        }
+
+        .help-title {
+            font-size: 2em;
+            margin-bottom: 30px;
+            color:brown;
+            cursor: pointer; /* Indicate it's clickable */
+        }
+
+        .help-link-container {
+            display: none; /* Initially hidden */
+            position: absolute;
+            top: 100%; /* Position below the title */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: wheat;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 10; /* Ensure it's on top */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            flex-direction: column; /* Stack links vertically */
+            transition: 0.7s;
+           
+        }
+
+        .help-container:hover .help-link-container {
+            display: flex; /* Show on hover */
+        }
+
+        .help-link {
+            display: block;
+            padding: 8px 16px;
+            background-color:brown;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            margin: 5px;
+        }
+
+        .help-link:hover {
+            background-color: #f66c09;
+        }
+
+        .help-content {
+            display: none; /* Initially hidden */
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .help-content h3 {
+            color: #de3311;
+            margin-bottom: 10px;
+        }
+
+        .help-content p {
+            color: #bc14f5;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="help-container">
+        <h2 class="help-title">Help & FAQs</h2>
+        <div class="help-link-container">
+            <a href="#shipping" class="help-link" onclick="showContent('shipping')">Shipping & Returns</a>
+            <a href="#tracking" class="help-link" onclick="showContent('tracking')">Order Tracking</a>
+            <a href="#payment" class="help-link" onclick="showContent('payment')">Payment Options</a>
+            <a href="#account" class="help-link" onclick="showContent('account')">Account Help</a>
+        </div>
+        <div class="help-content" id="shipping">
+            <h3>Shipping & Returns</h3>
+            <p>Our shipping policy ensures fast and reliable delivery. We offer various shipping options to meet your needs. For returns, please ensure the item is in its original condition and contact us within 30 days of receipt.</p>
+        </div>
+        <div class="help-content" id="tracking">
+            <h3>Order Tracking</h3>
+            <p>You can track your order by entering your tracking number on our website. We'll provide real-time updates on your shipment's status and estimated delivery date.</p>
+        </div>
+        <div class="help-content" id="payment">
+            <h3>Payment Options</h3>
+            <p>We accept all major credit cards, debit cards, and PayPal. Securely pay for your orders with our encrypted payment gateway. Your financial information is always protected.</p>
+        </div>
+        <div class="help-content" id="account">
+            <h3>Account Help</h3>
+            <p>If you're having trouble accessing your account, please use the "Forgot Password" option. For other account-related issues, contact our support team for assistance.</p>
+        </div>
+    </div>
+
+    <script>
+        function showContent(id) {
+            const contents = document.querySelectorAll('.help-content');
+            contents.forEach(content => content.style.display = 'none');
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
