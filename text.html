@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<title><i> YOUR CLOSET</i></title>
+<head>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body class="body">
+    <div class="scrollable-navbar">
+    <div class="navbar">
+    <ul>
+        
+        <li><a href="#">home</a>
+          <li><a href="cart.html" id="cart-link">cart</a></li>
+         <li><a href="help.html" id="help-link" >help</a></li>
+         <li><a href="aboutus.html" id="aboutus-link">about us</a></li>
+         
+    </ul>
+</div>
+   
+<div class="scrollable-container">
+    <div class="image-container">
+        <div class="image-wrapper"> <img src="lehenga.webp" data-target="lehenga-details" alt="Description" class="lehenga">
+            <button class="lehengabutton" data-target="lehenga-details">RECEPTION </button>
+            
+            <p id="lehengatxt"><i>"Draped in dreams and shimmering details, <br>this lehenga is a masterpiece of tradition and elegance. <br> Feeling like a queen, one twirl at a time."</i></p>
+            <div id="lehenga-details" class="details">
+               
+        </div>
+        <div class="image-wrapper"><img src="saree1.webp" data-target="saree-details" alt="Description" class="saree1">
+            <button class="saree1button" data-target="saree-details">BRIDE</button>
+            
+            <p id="saree1txt"><i>"In a world of trends,<br> I choose tradition. <strong>Saree,</strong> my eternal love".</i></p>
+            <div id="saree-details" class="details">
+                
+               
+               </div>
+        </div>
+        <div class="image-wrapper"> <img src="co-ord.webp" alt="Description" class="co-ord">
+            <button class="co-ordbutton" data-target="co-ord">MEHENDI</button>
+            <p id="co-ordtxt"><i> "Someone complimented my top, and guess what? <br>It matches my pants perfectly!"</i></p>
+            <div id="coord-details" class="details">
+              
+               
+            </div>
+        </div>
+        <div  class="image-wrapper"> <img src="haldi.jpeg" alt="description" class="haldi">
+       <button class="haldibutton" data-target="haldi">HALDI HUES</button>
+       <p id="halditxt"><i>“A touch of turmeric, a splash of love,<br> and a lifetime of togetherness begins.”</i></p>
+       <div id="haldi-details" class="details">
+      
+       </div>
+        </div>
+     <div class="image-wrapper"> <img src="bachelorette.jpeg" alt="description" class="bachelorette">
+        <button class="bachelorettebutton" data-target="bachelorette">BACHELORETTE</button>
+        <p id="bachelorettetxt"><i>"What happens at the bachelorette party <br>stays at the bachelorette party."</i></p>
+        <div id="bachelorette-details" class="details">
+        
+        </div>
+        </div>
+        <div class="image-wrapper"> <img src="sangeet.jpeg" alt="description" class="sangeet">
+        <button class="sangeetbutton" data-target="sangeet">SANGEET</button>
+        <p id="sangeettxt"><i>"Embark your journey where emotions meet melody".</i></p>
+        <div id="sangeet-details" class="details">
+       
+        </div>
+     </div>
+    </div>
+    </div>
+    
+  </div>
+    <script>
+       document.addEventListener('DOMContentLoaded', function() {
+            const lehengaImage = document.querySelector('.lehenga');
+            const lehengaButton = document.querySelector('.lehengabutton');
+
+
+            lehengaImage.addEventListener('click', function() {
+                window.location.href = 'lehsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            lehengaButton.addEventListener('click', function() {
+                window.location.href = 'lehsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+            const sareeImage = document.querySelector('.saree1');
+            const sareeButton = document.querySelector('.saree1button');
+            
+
+            sareeImage.addEventListener('click', function() {
+                window.location.href = 'sareesubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            sareeButton.addEventListener('click', function() {
+                window.location.href = 'sareesubmenu.html'; // Redirect to lehsubmenu.html
+            });
+            const coordImage = document.querySelector('.co-ord');
+            const coordButton = document.querySelector('.co-ordbutton');
+            
+
+            coordImage.addEventListener('click', function() {
+                window.location.href = 'co-ordsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            coordButton.addEventListener('click', function() {
+                window.location.href = 'co-ordsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+            const haldiImage = document.querySelector('.haldi');
+            const haldiButton = document.querySelector('.haldibutton');
+            
+
+            haldiImage.addEventListener('click', function() {
+                window.location.href = 'haldisubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            haldiButton.addEventListener('click', function() {
+                window.location.href = 'haldisubmenu.html'; // Redirect to lehsubmenu.html
+            });
+            const bachImage = document.querySelector('.bachelorette');
+            const bachButton = document.querySelector('.bachelorettebutton');
+            
+
+            bachImage.addEventListener('click', function() {
+                window.location.href = 'bachsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            bachButton.addEventListener('click', function() {
+                window.location.href = 'bachsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            const sangeetImage = document.querySelector('.sangeet');
+            const sangeetButton = document.querySelector('.sangeetbutton');
+            
+
+            sangeetImage.addEventListener('click', function() {
+                window.location.href = 'sangeetsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            sangeetButton.addEventListener('click', function() {
+                window.location.href = 'sangeetsubmenu.html'; // Redirect to lehsubmenu.html
+            });
+
+            const cartLink = document.getElementById('cart-link');
+    const cartMessage = document.getElementById('cart-message');
+    const helpLink = document.getElementById('help-link');
+    const helpMessage = document.getElementById('help-message');
+    const aboutuslink = document.getElementById('aboutus-link');
+    const aboutusMessage = document.getElementById('about-us-message');
+
+    cartLink.addEventListener('click', function(event) {
+        
+        cartMessage.style.display = 'block'; 
+        setTimeout(function(){
+            cartMessage.style.display = 'none'; 
+        }, 2000);
+      });
+
+
+            
+        }); 
+        
+           
+      </script>
+  
+    
+</body>
+</html>
+            
